@@ -1,6 +1,6 @@
 dictionary = {}
 
-def display_menu():
+def Menu():
     print("\nDictionary App Menu:")
     print("1. Add a Word")
     print("2. Delete a Word")
@@ -8,3 +8,9 @@ def display_menu():
     print("4. View Dictionary")
     print("5. Search for a Word")
     print("6. Exit")
+
+Menu()
+
+    
+
+
