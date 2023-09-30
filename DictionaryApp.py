@@ -19,6 +19,8 @@ while True:
         Add()
     elif choice == '2':
         Delete()
+    elif choice == '3':
+        Edit()
     elif choice == '6':
         print("Exiting Dictionary App. Goodbye!")
         break
@@ -36,6 +38,18 @@ while True:
     if word in dictionary:
         del dictionary[word]
         print("Word deleted from the dictionary.")
+    else:
+        print("Word not found in the dictionary.")
+while True:
+    Menu()
+    choice = input("Enter your choice: ")
+
+    def Edit():
+    word = input("Enter the word to edit: ")
+    if word in dictionary:
+        new_definition = input("Enter the new edit: ")
+        dictionary[word] = new_definition
+        print("Word edited successfully.")
     else:
         print("Word not found in the dictionary.")
 while True:
