@@ -12,23 +12,35 @@ def Menu():
 Menu()
 
 while True:
-    display_menu()
+    Menu()
     choice = input("Enter your choice: ")
 
     if choice == '1':
-        add_word()
-
-     elif choice == '6':
+        Add()
+    elif choice == '2':
+        Delete()
+    elif choice == '6':
         print("Exiting Dictionary App. Goodbye!")
         break
     else:
         print("Invalid choice. Please try again.")
 
-        def add_word():
+        def Add():
     word = input("Enter the word to add: ")
     definition = input("Enter the definition: ")
     dictionary[word] = definition
     print("Word added to the dictionary.")
+
+    def Delete():
+    word = input("Enter the word to delete: ")
+    if word in dictionary:
+        del dictionary[word]
+        print("Word deleted from the dictionary.")
+    else:
+        print("Word not found in the dictionary.")
+while True:
+    Menu()
+    choice = input("Enter your choice: ")
 
 
     
