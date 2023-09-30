@@ -21,6 +21,8 @@ while True:
         Delete()
     elif choice == '3':
         Edit()
+    elif choice == '4':
+        View()
     elif choice == '6':
         print("Exiting Dictionary App. Goodbye!")
         break
@@ -53,6 +55,14 @@ while True:
     else:
         print("Word not found in the dictionary.")
 while True:
+    Menu()
+    choice = input("Enter your choice: ")
+
+    def View():
+    print("\nDictionary Contents:")
+    for word, definition in dictionary.items():
+        print(f"{word}: {definition}")
+        while True:
     Menu()
     choice = input("Enter your choice: ")
 
