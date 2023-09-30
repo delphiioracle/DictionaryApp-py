@@ -11,6 +11,26 @@ def Menu():
 
 Menu()
 
+while True:
+    display_menu()
+    choice = input("Enter your choice: ")
+
+    if choice == '1':
+        add_word()
+
+     elif choice == '6':
+        print("Exiting Dictionary App. Goodbye!")
+        break
+    else:
+        print("Invalid choice. Please try again.")
+
+        def add_word():
+    word = input("Enter the word to add: ")
+    definition = input("Enter the definition: ")
+    dictionary[word] = definition
+    print("Word added to the dictionary.")
+
+
     
 
 
